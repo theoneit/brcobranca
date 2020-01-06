@@ -113,7 +113,7 @@ module Brcobranca
 
         # define as linhas do documento conforme margem inferior
         def calc_linhas(margin_bottom)
-          linhas = [10.6, 6.6, 5.75, 4.9, 4.2, 3.35, 2.6, 2.3, 0.3, 5.72, 6.1]
+          linhas = [10.6, 6.6, 5.75, 4.9, 4.2, 3.35, 2.6, 2.3, 0.3, 5.73, 6.1]
 
           linhas.map.with_index { |v, i| linhas[i] = v + margin_bottom }
         end
