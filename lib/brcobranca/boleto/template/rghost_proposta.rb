@@ -136,7 +136,7 @@ module Brcobranca
 
           # cedente
           doc.moveto x: colunas[3]-0.8, y: linhas[10]
-          doc.show "#{boleto.cedente} / #{boleto.documento_cedente}"
+          doc.show "#{boleto.cedente} - #{boleto.documento_cedente}"
           doc.moveto x: colunas[3]-0.8, y: linhas[9]
           doc.show "#{boleto.cedente_endereco}"
 
