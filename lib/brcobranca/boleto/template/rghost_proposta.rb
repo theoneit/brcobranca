@@ -113,7 +113,7 @@ module Brcobranca
 
         # define as linhas do documento conforme margem inferior
         def calc_linhas(margin_bottom)
-          linhas = [10.6, 6.6, 5.75, 4.9, 4.2, 3.35, 2.6, 2.3, 0.3]
+          linhas = [10.6, 6.6, 5.40, 4.9, 4.2, 3.35, 2.6, 2.3, 0.3, 5.80]
 
           linhas.map.with_index { |v, i| linhas[i] = v + margin_bottom }
         end
@@ -136,7 +136,9 @@ module Brcobranca
 
           # cedente
           doc.moveto x: colunas[0], y: linhas[2]
-          doc.show "#{boleto.cedente} / #{boleto.documento_cedente} / #{boleto.cedente_endereco}"
+          doc.show "#{boleto.cedente} / #{boleto.documento_cedente}"
+          doc.moveto x: colunas[0], y: linhas[9]
+          doc.show "#{boleto.cedente_endereco}"
 
           # vencimento
           doc.moveto x: colunas[7], y: linhas[2]
