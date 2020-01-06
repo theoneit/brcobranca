@@ -135,9 +135,9 @@ module Brcobranca
           doc.show boleto.local_pagamento
 
           # cedente
-          doc.moveto x: colunas[7], y: linhas[10]
+          doc.moveto x: colunas[3], y: linhas[10]
           doc.show "#{boleto.cedente} / #{boleto.documento_cedente}"
-          doc.moveto x: colunas[7], y: linhas[9]
+          doc.moveto x: colunas[3], y: linhas[9]
           doc.show "#{boleto.cedente_endereco}"
 
           # vencimento
