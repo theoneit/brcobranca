@@ -136,7 +136,7 @@ module Brcobranca
 
           # cedente
           doc.moveto x: colunas[0], y: linhas[2]
-          doc.show boleto.cedente
+          doc.show "#{boleto.cedente} - #{boleto.documento_cedente} - #{boleto.endereco_cedente}"
 
           # vencimento
           doc.moveto x: colunas[7], y: linhas[2]
